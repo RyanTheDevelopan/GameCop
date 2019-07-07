@@ -18,7 +18,7 @@ client.on("ready", () => {
 // Create an event listener for new guild members
 client.on('guildMemberAdd', member => {
     // Send the message to a designated channel on a server:
-    const channel = member.guild.channels.find(ch => ch.name === 'joins-leaves');
+    const channel = member.guild.channels.find(ch => ch.name === '🚪╿entrance');
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
@@ -27,7 +27,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on("guildMemberRemove", member => {
-    const channel = member.guild.channels.find(ch => ch.name === 'joins-leaves')
+    const channel = member.guild.channels.find(ch => ch.name === '🚪╿exit')
     if (!channel) return;
     channel.send(`${member}`);
     channel.sendFile(`Goodbye ${member}, hope you had a fun time here :frowning: :wave:`);
