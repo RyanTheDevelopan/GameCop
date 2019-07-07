@@ -1,0 +1,22 @@
+{
+  "engines": {
+    "node": "8.x",
+    "npm": "*"
+  },
+  "name": "gamecop",
+  "version": "1.0.0",
+  "description": "A bot made to cop game city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "IT Ryan#0138",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^11.13.8",
+    "discord-leveling": "^1.0.3",
+    "discord.js": "^11.4.2",
+    "dotenv": "^8.0.0"
+  }
+}
