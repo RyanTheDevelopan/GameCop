@@ -23,14 +23,14 @@ client.on('guildMemberAdd', member => {
     if (!channel)
         return;
     channel.send(`${member}`);
-    channel.sendFile(`**Welcome to Game City! Have a fun time here!**`);
+    channel.send(`**Welcome to Game City! Have a fun time here!**`);
 });
 client.on("guildMemberRemove", member => {
     const channel = member.guild.channels.find(ch => ch.name === '🚪╿exit');
     if (!channel)
         return;
     channel.send(`${member}`);
-    channel.sendFile(`Goodbye ${member}, hope you had a fun time here :frowning: :wave:`);
+    channel.send(`Goodbye ${member}, hope you had a fun time here :frowning: :wave:`);
 });
 client.on("message", msg => {
     if (msg.author.bot) {
