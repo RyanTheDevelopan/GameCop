@@ -29,7 +29,6 @@ client.on("guildMemberRemove", member => {
     const channel = member.guild.channels.find(ch => ch.name === '🚪╿exit');
     if (!channel)
         return;
-    channel.send(`${member}`);
     channel.send(`Goodbye ${member}, hope you had a fun time here :frowning: :wave:`);
 });
 client.on("message", msg => {
