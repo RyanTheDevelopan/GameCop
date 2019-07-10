@@ -1,5 +1,5 @@
 export let config = {
-    "prefix": "gc!",
+    "prefix": "gw!",
     "commands": [
         "help",
         "testCommand",
