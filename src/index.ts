@@ -18,18 +18,17 @@ client.on("ready", () => {
 // Create an event listener for new guild members
 client.on('guildMemberAdd', member => {
     // Send the message to a designated channel on a server:
-    const channel = member.guild.channels.find(ch => ch.name === '🚪╿entrance');
+    const channel = member.guild.channels.find(ch => ch.name === '👋🏻》welcome');
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
-    channel.send(`${member}`);
-    channel.send(`**Welcome to Game City! Have a fun time here!**`);
+    channel.send(`${member} has joined Gamers Coffee. Make sure to give them a warm welcome!`);
 });
 
 client.on("guildMemberRemove", member => {
-    const channel = member.guild.channels.find(ch => ch.name === '🚪╿exit')
+    const channel = member.guild.channels.find(ch => ch.name === '👋🏻》welcome')
     if (!channel) return;
-    channel.send(`Goodbye ${member}, hope you had a fun time here :frowning: :wave:`);
+    channel.send(`${client.user.tag} has left Gamers Coffee :c.`);
 });
 
 

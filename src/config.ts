@@ -7,6 +7,8 @@ export let config = {
         "ban",
         "purge",
         "bot-info",
-        "say"
+        "say",
+        "hi",
+        "bye"
     ]
 }

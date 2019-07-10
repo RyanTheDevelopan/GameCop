@@ -23,6 +23,9 @@ export default class help implements IBotCommand {
         .addField("ban", "Ban the mentioned member")
         .addField("purge", "Purge the chat")
         .addField("bot-info", "Info about this bot account")
+        .addField("say", "Have me say something.")
+        .addField("hi", "Have me greet you.")
+        .addField("bye", "Well, goodbye.")
             .setColor(0x643C3C)
             msgObject.channel.send(embed);
     }
