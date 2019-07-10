@@ -10,7 +10,7 @@ loadCommands(`${__dirname}/commands`)
 
 client.on("ready", () => {
     console.log("Ready");
-    client.user.setActivity(`GameCop | Moderating ${client.users.size} members`)
+    client.user.setActivity(`GameWaiter | Moderating ${client.users.size} members`)
 })
 
 
